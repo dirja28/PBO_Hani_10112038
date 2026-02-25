@@ -48,6 +48,8 @@ echo "Pembeli: " . $belanja->namaPembeli . "<br>";
 echo "Barang: " . $belanja->namaBarang . "<br>";
 echo "Subtotal " . formatRupiah( $belanja->hitungSubtotal()) . "<br>";
 echo "Total (Diskon 10%) " . formatRupiah( $belanja->hitungTotalDenganDiskon(10)) . "<br>";
+$total = $belanja->hitungTotalDenganDiskon(10);
 echo "<b>Total Bayar : " . formatRupiah($total) . "</br>"
+
 
 ?>
